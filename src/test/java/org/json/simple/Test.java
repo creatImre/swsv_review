@@ -301,7 +301,7 @@ public class Test extends TestCase{
 		JSONArray array1=new JSONArray();
 		array1.add("abc\u0010a/");
 		array1.add(Integer.valueOf(123));
-		array1.add(new Double(222.123));
+		array1.add(Double.valueOf(222.123));
 		array1.add(Boolean.valueOf(true));
 		System.out.println("======array1==========");
 		System.out.println(array1);
@@ -325,7 +325,7 @@ public class Test extends TestCase{
 		List list = new ArrayList();
 		list.add("abc\u0010a/");
 		list.add(Integer.valueOf(123));
-		list.add(new Double(222.123));
+		list.add(Double.valueOf(222.123));
 		list.add(Boolean.valueOf(true));
 		list.add(null);
 		System.out.println("======list==========");
@@ -365,7 +365,7 @@ public class Test extends TestCase{
         List l2 = new LinkedList();
         Map m3 = new LinkedHashMap();
         m3.put("k31", "v3");
-        m3.put("k32", new Double(123.45));
+        m3.put("k32", Double.valueOf(123.45));
         m3.put("k33", Boolean.valueOf(false));
         m3.put("k34", null);
         l2.add("vvv");
