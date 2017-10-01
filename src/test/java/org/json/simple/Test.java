@@ -300,7 +300,7 @@ public class Test extends TestCase{
 		
 		JSONArray array1=new JSONArray();
 		array1.add("abc\u0010a/");
-		array1.add(new Integer(123));
+		array1.add(Integer.valueOf(123));
 		array1.add(new Double(222.123));
 		array1.add(Boolean.valueOf(true));
 		System.out.println("======array1==========");
@@ -324,7 +324,7 @@ public class Test extends TestCase{
 	
 		List list = new ArrayList();
 		list.add("abc\u0010a/");
-		list.add(new Integer(123));
+		list.add(Integer.valueOf(123));
 		list.add(new Double(222.123));
 		list.add(Boolean.valueOf(true));
 		list.add(null);
